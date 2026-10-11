@@ -1,0 +1,12 @@
+.pio/
+.vscode/
+.DS_Store
+.env
+.env.*
+!.env.example
+captures/
+*.jpg
+*.jpeg
+*.bmp
+*.raw
+
