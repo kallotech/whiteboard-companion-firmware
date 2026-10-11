@@ -1,18 +1,20 @@
-# Status — 11 October 2026
+# Status — 12 October 2026
 
 ## Implemented in this starter
 
-- PlatformIO project scaffold targeting an ESP32-C3 DevKit variant.
-- Serial startup message and a camera adapter interface.
-- Safe unconfigured camera implementation; it reports that capture is unavailable.
+- PlatformIO project targeting an ESP32-S3-DevKitC-1 N8R8 reference.
+- Espressif `esp32-camera` initialization for a reference OV2640 DVP pin map.
+- Physical capture-button handler; captured JPEG size is logged and frame memory is released.
+- MIT firmware license.
 
 ## Not implemented or verified
 
-- Camera hardware/driver, pin assignments, JPEG capture, Wi-Fi, image transfer, AI service and physical controls.
-- The CAD names the board only as ESP32-C3 DevKit. Confirm the exact board variant before relying on the PlatformIO target.
-- No hardware build or board test has been run.
+- Exact DevKitC-1 and camera breakout SKUs, connector/pinout and wiring have not been confirmed.
+- R04 CAD still contains the earlier ESP32-C3 reference; no S3/camera fit check has been made.
+- Wi-Fi, image storage/transfer, AI service and camera optics are not implemented.
+- No firmware build or board test has been run.
 
 ## Next decision
 
-Select a C3-compatible SPI camera module and verify its dimensions, optics and electrical requirements against the R04 camera pod and carrier PCB. See `docs/camera-selection.md`.
+Confirm the exact DevKitC-1 N8R8 and OV2640 DVP camera breakout, then update the Fusion model and verify dimensions, optics, FPC routing and electrical requirements. See `docs/camera-selection.md`.
 

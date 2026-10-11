@@ -4,6 +4,6 @@
 - Do not claim a camera, network, AI, or display feature works until it is built and verified on the selected hardware.
 - Do not capture or transmit images automatically. Any image workflow needs an explicit user action and a documented destination.
 - Keep credentials and real whiteboard captures out of Git.
-- Treat ESP32-C3 camera compatibility, GPIO assignments, power, storage, and optics as unresolved until a specific camera module is selected and checked against the CAD.
+- Treat the ESP32-S3-DevKitC-1 N8R8 and OV2640 DVP as provisional reference parts until exact SKU, pinout, power, dimensions and optical performance are checked against the CAD.
 - Preserve the Partwork project's hardware license choice; the firmware license is a separate decision and is not set yet.
 
